@@ -1,0 +1,14 @@
+apiVersion: 1
+
+datasources:
+- name: InfluxDB-Telegraf
+  type: influxdb
+  access: direct #this will change to proxy
+  orgId: 1
+  url: influxdb
+  isDefault: true
+  user: telegraf
+  secureJsonData:
+    password: telegraf
+  database: telegraf
+  version: 1
